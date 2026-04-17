@@ -451,6 +451,7 @@ body {
 
 .footer-wrapper {
   max-width: 264px;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -495,6 +496,7 @@ body {
   flex-direction: column;
   gap: 16px;
   max-width: 208px;
+  margin-right: 80px;
 }
 
 .footer-social-media {
@@ -534,7 +536,7 @@ body {
   background: var(--navy-blue);
   padding: 8px 16px;
   outline: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-input-email:hover,
@@ -626,7 +628,6 @@ body {
 .footer .container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 
 /*----------------- MODAL-FORM ----------------------- */
@@ -669,19 +670,17 @@ body {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 24px;
   right: 24px;
-  border: none;
-  border-radius: 100%;
-  fill: var(--cornflower);
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon {
@@ -689,14 +688,11 @@ body {
 }
 
 .modal-close:hover {
-  .modal-close-icon {
-    fill: var(--white);
-  }
+  background-color: var(--ocean);
+}
 
-  .modal-close-icon-circle {
-    fill: var(--ocean);
-    background-color: var(--ocean);
-  }
+.modal-close:hover .modal-close-icon {
+  fill: var(--white);
 }
 
 .modal-close-icon-circle {
