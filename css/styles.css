@@ -452,17 +452,11 @@ body {
 .footer .container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-}
-
-.footer-wrapper-left {
-  display: flex;
-  align-items: baseline;
-  gap: 120px;
 }
 
 .footer-wrapper {
   max-width: 264px;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -507,6 +501,7 @@ body {
   flex-direction: column;
   gap: 16px;
   max-width: 208px;
+  margin-right: 80px;
 }
 
 .footer-social-media {
@@ -561,6 +556,7 @@ body {
   flex-direction: column;
   gap: 16px;
   width: 453px;
+  margin-left: auto;
 }
 
 .footer-form {
