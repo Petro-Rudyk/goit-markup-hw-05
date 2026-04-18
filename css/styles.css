@@ -507,85 +507,6 @@ body {
   color: var(--white);
 }
 
-.footer-wrapper-subscribe {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 453px;
-}
-
-.footer-form {
-  display: flex;
-  gap: 24px;
-  width: 453px;
-}
-
-.footer-form-input-email {
-  font-family: var(--font-family);
-  border: 1px solid var(--white);
-  border-radius: 4px;
-  width: 264px;
-  height: 40px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  font-weight: 400;
-  font-size: 12px;
-  padding: 8px 16px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: var(--white);
-  background: var(--navy-blue);
-  padding: 8px 16px;
-  outline: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-form-input-email:hover,
-.footer-form-input-email:focus {
-  border: 1px solid var(--green);
-}
-
-.footer-form-input-email::placeholder {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: var(--white);
-}
-
-.footer-form-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 16px;
-  border-radius: 4px;
-  padding-block: 8px;
-  padding-inline: 24px;
-
-  width: 165px;
-  height: 40px;
-
-  border: none;
-  cursor: pointer;
-  margin: 0 auto;
-
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: var(--white);
-  background: var(--iris);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-form-button:hover,
-.footer-form-button:focus {
-  background: var(--green);
-}
-
 .social-link {
   display: block;
   width: 40px;
@@ -628,6 +549,84 @@ body {
 .footer .container {
   display: flex;
   align-items: baseline;
+}
+
+.footer-wrapper-subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 453px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+  width: 453px;
+}
+
+.footer-form-input-email {
+  font-family: var(--font-family);
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 400;
+  font-size: 12px;
+  padding: 8px 16px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background: var(--navy-blue);
+  padding: 8px 16px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-input-email:hover,
+.footer-form-input-email:focus {
+  border: 1px solid var(--green);
+}
+
+.footer-form-input-email::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.footer-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 4px;
+  padding-block: 8px;
+  padding-inline: 24px;
+
+  width: 165px;
+  height: 40px;
+
+  border: none;
+  cursor: pointer;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white);
+  background: var(--iris);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+  background: var(--green);
 }
 
 /*----------------- MODAL-FORM ----------------------- */
@@ -710,8 +709,11 @@ body {
   margin-bottom: 8px;
 }
 
+.modal-field-textarea {
+  margin-bottom: 16px;
+}
+
 .modal-field-accept {
-  margin-top: 16px;
   margin-bottom: 24px;
 }
 
